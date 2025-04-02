@@ -40,8 +40,8 @@ function addTask() {
         return;
     }
 
-    let priorityPrompt = prompt("Enter Priority('1-high , 2-Medium , 3- Low'):", "2");
-    priorityPrompt = isNaN(priorityPrompt) || priorityPrompt < 1 || priorityPrompt > 3 ? 2 : Number(priorityPrompt);
+    let priorityPrompt = prompt("Enter Priority(1-High , 2-Medium , 3- Low):", "2");
+    priorityPrompt = isNaN(priorityPrompt) || priorityPrompt < 1 || priorityPrompt > 10 ? 2 : Number(priorityPrompt);
 
     let addNewtask = {
         id: taskCounter.increment(),
